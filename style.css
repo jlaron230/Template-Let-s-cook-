@@ -1,0 +1,253 @@
+/*CLASSE GÉNÉRIQUE*/
+li{
+    list-style: none;
+}
+ul{
+    padding-inline-start :0;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #2a6914;
+}
+
+h2{
+    font-family: 'Comfortaa', cursive;
+    color: #2a6914;
+    margin-top: 0px;
+}
+
+h3{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+a{
+    color: #3b291d;
+}
+
+article{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+li i{
+    padding: 5px;
+    color: #ffea00;
+}
+
+#color-grey{
+    color: #a3958a;
+}
+
+ul{
+    padding: 7px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer{
+    padding: 25px;
+}
+#background-img{
+    background-image: url(/img/cooking.svg);
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 100%;
+    min-height: 16vw;
+    margin-bottom: -1px;
+}
+
+#background-color-Footer{
+background-color:  #542913 ;
+}
+
+article ul > a {
+    display: flex;
+    justify-content: flex-end;
+    color: #2a6914;
+    font-weight: bold;
+}
+
+.vignette-badge{
+    position: absolute;
+    background-color: green;
+    padding: 0.5%;
+    border-radius: 20%;
+    margin-right: 10px;
+    color: white;
+}
+
+.mentions-container{
+    text-align: center;
+}
+
+.margin-leftX2vw{
+    margin-left: 2vw;
+}
+
+.margin-rightX2vw{
+    margin-right: 2vw;
+}
+
+.margin-bottomX2vH{
+margin-bottom: 1vh;
+}
+
+.margin-bottomX4vH{
+    margin-bottom: 4vh;
+}
+
+.padding-bottomX2vH{
+    padding-bottom: 1vh;
+}
+
+.margin-topx5{
+    margin-top: 50px;
+}
+
+main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article img {
+    object-fit: cover;
+    max-height: 180px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.font-Nav{
+background-color: #542913;
+}
+
+button{
+    background: transparent;
+    border: transparent;
+}
+
+input{
+    border-radius: 20px;
+    min-height: 1vw;
+}
+
+.design-card{
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.056), 0.4em 0 0.4em rgba(0, 0, 0, 0.084);
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+.container-Footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.container-Footer div {
+    flex-basis: 200px;
+    flex-shrink: 1;
+}
+
+.container-Footer ul {
+    flex-basis: 200px;
+    flex-shrink: 1;
+}
+
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #a3958a;
+}
+
+.container-Links{
+    display: flex;
+    color: white;
+}
+
+.list li {
+    list-style-type: unset;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.list-icon i{
+color: #a3958a;
+}
+
+.list a {
+    color: #a3958a;
+}
+
+
+.Container-list{
+    display: flex;
+align-items: center;
+gap: 3vw;
+color: white;
+}
+
+.container-Cards{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+.container-elements{
+    display: flex;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.container-vignette{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo_img{
+   max-width: 5vw;
+}
+
+.Search-img{
+    width: 215px;
+    display: flex;
+}
+
+@media (min-width: 1024px){
+    .container-Footer div {
+        flex-basis: 400px;
+        flex-shrink: 1;
+    }
+    
+    .container-Footer ul {
+        flex-basis: 400px;
+        flex-shrink: 1;
+    }
+}
+
+/*Méthode cross pour renommer ses classes CSS, utiliser le --class pour les appeler comme des variables pour
+des colors, font-size ect...*/
