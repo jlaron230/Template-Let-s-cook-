@@ -1,0 +1,39 @@
+
+/*ANCHOR - Form */
+#background-img-form{
+    background-image: url(img/jonny-gios-HubZ8j6YXxU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 100%;
+    height: 450px;
+}
+
+/*ANCHOR - CLASSES GÉNÉRIQUE */
+h2{
+    margin-bottom: 5px;
+    color: black;
+}
+
+h1{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+p{
+    margin: 0;
+}
+
+/*ANCHOR - Main */
+
+.form-example input{
+    border: solid;
+    min-height: 0;
+    padding: 8px;
+    color: green;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.form-exemple__input{
+    width: 100%;
+}

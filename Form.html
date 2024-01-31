@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <!--LINK / STYLE.CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <!--LINK / FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/6ea6f78a7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--LINK / FONT COMFORTAA-->
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="background-header">
+         <!--Menu de navigation-->
+        <nav class="dp-fl jt-ctn-center fl-flow-r-w viewport-size jt-space-between">  
+         <ul class="Nav__links dp-fl al-items-center flex-b-4 cl-white">
+            <!--Links et logo-->
+         <a href="index.html"><img id="logo" src="/img/logo.svg" alt="Logo Let's Cook"></a>
+         <li><a href="#">Accueil</a></li>
+         <li><a href="#">Recettes</a></li>
+         <li><a href="#">Tendances</a></li>
+        </ul>
+
+         <!--Barre de recherche-->
+         <div class="flex-b-3 dp-fl">
+         <form class="dp-fl al-items-center" action="search" method="get">
+            <label for="search"></label>
+            <input class="flex-b-2 p-left-10px" type="text" name="search" id="search" placeholder="Entrez votre recherche">
+           <button class="flex-b-04" type="submit" name="Rechercher"> <img src="img/search-solid-white.svg" alt="Recherche"></button>
+           </form>
+
+           <!--Login-->
+           <div class="p-x5 dp-fl jt-ctn-center fl-wrap al-content"><a href="Form.html"><i id="cl-white" class="fa-solid fa-user"></i></a></div>
+        </div>
+        </nav>
+
+    </header>
+
+    <main class="m-top-50 m-bottom-x10 main">
+
+        <div class="dp-fl fl-flow-r-w jt-ctn--space-evenly gap-x15 viewport-size">
+
+        <div id="background-img-form" class="m-bottom--1 min-h20 flex-b-36">
+        </div>
+     <div class="dp-fl flex-b-36 fl-wrap al-content-fl-start fl-d-column">
+        <h1>Sign Up</h1>
+        <h2>Get full access</h2>
+        <form action="" method="get" class="form-example">
+            <div class="form-example m-bottom-x10">
+              <label for="firstname"></label>
+              <input class="form-exemple__input" type="text" name="firstname" id="firstname" required placeholder="First Name "/>
+            </div>
+            <div class="form-example m-bottom-x10">
+              <label for="lastname"></label>
+              <input class="form-exemple__input" type="text" name="lastname" id="lastname" required placeholder="Last Name " />
+            </div>
+            <div class="form-example m-bottom-x10">
+                <label for="email"></label>
+                <input class="form-exemple__input" type="email" name="email" id="email" required placeholder="johndoe@gmail.com " />
+              </div>
+              <div class="form-example m-bottom-x10">
+                <label for="password"></label>
+                <input class="form-exemple__input" type="password" name="password" id="password" required placeholder="Password " />
+              </div>
+              <div class="form-example m-bottom-x10">
+                <label for="Confirm-password"></label>
+                <input class="form-exemple__input" type="password" name="Confirm-password" id="Confirm-password" required placeholder="Confirm password " />
+              </div>
+              <div class="form-example m-bottom-x10">
+                <label for="phone"></label>
+                <input class="form-exemple__input" type="tel" name="phone" id="phone" required placeholder="Phone " />
+              </div>
+            <div class="form-example m-bottom-x10">
+              <input id="cl-white" class=" m-t-x10 p-top-7 p-bottom-7 cl-green" type="submit" value="Register now" />
+            </div>
+
+          </form>
+          <p>Already have an account <a href="#">Connexion</a></p>
+        </div>
+
+    </div>
+    </main>
+
+<!--Image fond-->
+<div id="background-img-post-footer" class="m-bottom--1 min-h">
+</div>
+
+    <!--Footer-->
+<footer class="p-bottom-1vh p-x25" id="cl-brown">
+    <section class="Footer-section m-bottom-7vH viewport-size jt-ctn--space-evenly fl-flow-r-w dp-fl">
+        <!--Links-->
+        <ul class="Footer-section__list m-bottom-x10">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Recettes</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+        <!--Social icons-->
+        <div class="Footer-section__list-icon">
+            <h3>Suivez-nous</h3>
+            <div class="cl-white dp-fl">
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+            </div>
+        </div>
+         <!--Form Subscribe-->
+        <div>
+            <h3>Abonnez-vous à notre Newsletter</h3>
+            <form class="cl-grey-g dp-fl fl-d-column" action="Email" method="">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="Entrez votre E-mail">
+                <span class="m-top-1vh"><input type="checkbox" name="case de vérification">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                </form>
+            </div>
+    </section>
+    <!--Mention légale-->
+    <div class="txt-al-center">
+        <a id="cl-grey" href="#">@ 2022 MODE 83</a>
+    </div>
+    </footer>
+</body>
+</html>

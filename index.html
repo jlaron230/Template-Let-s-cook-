@@ -4,47 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's cook</title>
+    <!--LINK / STYLE.CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--LINK / FONT AWESOME-->
     <script src="https://kit.fontawesome.com/6ea6f78a7c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--LINK / FONT COMFORTAA-->
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="font-Nav">
+    <header id="background-header">
          <!--Menu de navigation-->
-        <nav class="container">  
-         <ul class="Container-list margin-leftX2vw">
+        <nav class="dp-fl jt-ctn-center fl-flow-r-w viewport-size jt-space-between">  
+         <ul class="Nav__links dp-fl al-items-center flex-b-4 cl-white">
             <!--Links et logo-->
-         <img id="logo_img" src="/img/logo.svg" alt="Logo Let's Cook">
-         <li>Accueil</li>
-         <li>Recettes</li>
-         <li>Tendances</li>
+         <a href="index.html"><img id="logo" src="/img/logo.svg" alt="Logo Let's Cook"></a>
+         <li><a href="#">Accueil</a></li>
+         <li><a href="#">Recettes</a></li>
+         <li><a href="#">Tendances</a></li>
         </ul>
 
          <!--Barre de recherche-->
-         <form class="Search-img margin-rightX2vw" action="search" method="get">
+         <div class="flex-b-3 dp-fl">
+         <form class="dp-fl al-items-center" action="search" method="get">
             <label for="search"></label>
-            <input type="text" name="search" id="search" placeholder="Entrez votre recherche">
-           <button type="submit" name="Rechercher"> <img src="img/search-solid-white.svg" alt="Recherche"></button>
+            <input class="flex-b-2 p-left-10px" type="text" name="search" id="search" placeholder="Entrez votre recherche">
+           <button class="flex-b-04" type="submit" name="Rechercher"> <img src="img/search-solid-white.svg" alt="Recherche"></button>
            </form>
+
+           <!--Login-->
+           <div class="p-x5 dp-fl jt-ctn-center fl-wrap al-content"><i id="cl-white" class="fa-solid fa-user"></i></div>
+        </div>
         </nav>
+
     </header>
 <!--Section Main-->
-    <main class="margin-topx5">
-        <h1>Toutes les recettes</h1>
+    <main class="m-top-50">
+        <h1 class="txt-al-center">Toutes les recettes</h1>
 
-        <div class="container-Cards">
+        <div class="dp-fl fl-flow-r-w gap-x15 viewport-size">
 
             <!--Section carte 1-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                <div class="container-vignette">
-                    <p class="vignette-badge">vegan</p>
+                <div class="dp-fl jt-ctn-flex-end">
+                    <span class="design-card__badge cl-green">vegan</span>
                 <img src="img/celine-druguet-eQfy-hACQuw-unsplash.jpg" alt="">
                 </div>
 
+                <!--Texte card-->
                <ul>
                 <h2>Recette burger</h2>
                 <li><a href="#">difficulté</a> <i class="fa fa-star">
@@ -58,14 +70,17 @@
                </ul>
             </div>
             </article>
+
              <!--Section carte 2-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                <div class="container-vignette">
-                    <p class="vignette-badge">vegan</p>
-                <img src="img/clem-onojeghuo-r8lDTtSWGUc-unsplash.jpg" alt="">
-                </div>
-                
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
+                        <img src="img/clem-onojeghuo-r8lDTtSWGUc-unsplash.jpg" alt="">
+                    </div>
+
+                <!--Texte card-->
                <ul>
                 <h2>Poêler de légumes</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -79,14 +94,18 @@
                </ul>
             </div>
             </article>
+
              <!--Section carte 3-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                 <div class="container-vignette">
-                  <p class="vignette-badge">vegan</p>
-                <img src="img/katka-pavlickova-_v1wbPxLTT8-unsplash.jpg" alt="">
-                 </div>
-               <ul>
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
+                        <img src="img/katka-pavlickova-_v1wbPxLTT8-unsplash.jpg" alt="">
+                    </div>
+
+                <!--Texte card-->
+                <ul>
                 <h2>Fromage blanc</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
                 </i><i class="fa fa-star"></i><i class="fa fa-star">
@@ -99,13 +118,17 @@
                </ul>
             </div>
             </article>
+
             <!--Section carte 4-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                  <div class="container-vignette">
-                    <p class="vignette-badge">vegan</p>
+                    <div class="dp-fl jt-ctn-flex-end">
+                    <span class="design-card__badge cl-green">vegan</span>
                 <img src="img/max-griss-D68hZcHAMOw-unsplash.jpg" alt="">
                   </div>
+
+                <!--Texte card-->
                <ul>
                 <h2>Soupe de vermicelle</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -119,13 +142,17 @@
                </ul>
                </div>
             </article>
+
             <!--Section carte 5-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                 <div class="container-vignette">
-                        <p class="vignette-badge">vegan</p>
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
                 <img src="img/natalia-y-t_33_4nj5A0-unsplash.jpg" alt="">
                   </div>
+
+                <!--Texte card-->
                <ul>
                 <h2>Soupe de vermicelle</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -141,12 +168,15 @@
             </article>
             
             <!--Section carte 6-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                    <div class="container-vignette">
-                        <p class="vignette-badge">vegan</p>
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
                 <img src="img/scott-eckersley-n_q3Dyzv9jQ-unsplash.jpg" alt="">
                  </div>
+
+                <!--Texte card-->
                <ul>
                 <h2>Fondu savoyarde</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -162,12 +192,15 @@
             </article>
 
             <!--Section carte 7-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                    <div class="container-vignette">
-                        <p class="vignette-badge">vegan</p>
-                <img src="img/celine-druguet-eQfy-hACQuw-unsplash.jpg" alt="">  
-                </div> 
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
+                        <img src="img/celine-druguet-eQfy-hACQuw-unsplash.jpg" alt="">  
+                    </div> 
+
+                <!--Texte card-->
                <ul>
                 <h2>Recette burger</h2>
                 <li><a href="#">difficulté</a> <i class="fa fa-star">
@@ -181,13 +214,17 @@
                </ul>
             </div>
             </article>
+
              <!--Section carte 8-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                    <div class="container-vignette">
-                        <p class="vignette-badge">vegan</p>
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
                 <img src="img/clem-onojeghuo-r8lDTtSWGUc-unsplash.jpg" alt="">
-                </div>   
+                </div>  
+
+                <!--Texte card-->
                <ul>
                 <h2>Poêler de légumes</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -201,13 +238,17 @@
                </ul>
             </div>
             </article>
+
              <!--Section carte 9-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                    <div class="container-vignette">
-                        <p class="vignette-badge">vegan</p>
-                <img src="img/katka-pavlickova-_v1wbPxLTT8-unsplash.jpg" alt=""> 
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
+                        <img src="img/katka-pavlickova-_v1wbPxLTT8-unsplash.jpg" alt=""> 
                 </div>  
+
+                <!--Texte card-->
                <ul>
                 <h2>Fromage blanc</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -221,13 +262,17 @@
                </ul>
             </div>
             </article>
+
             <!--Section carte 10-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                    <div class="container-vignette">
-                        <p class="vignette-badge">vegan</p>
-                <img src="img/max-griss-D68hZcHAMOw-unsplash.jpg" alt="">   
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
+                        <img src="img/max-griss-D68hZcHAMOw-unsplash.jpg" alt="">   
                 </div>
+
+                <!--Texte card-->
                <ul>
                 <h2>Soupe de vermicelle</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -241,13 +286,17 @@
                </ul>
                </div>
             </article>
+
             <!--Section carte 11-->
-            <article class="container-elements">
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
                 <div class="design-card">
-                    <div class="container-vignette">
-                        <p class="vignette-badge">vegan</p>
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
                 <img src="img/natalia-y-t_33_4nj5A0-unsplash.jpg" alt="">  
                 </div> 
+
+                <!--Texte card-->
                <ul>
                 <h2>Soupe de vermicelle</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -263,12 +312,15 @@
             </article>
             
             <!--Section carte 12-->
-            <article class="container-elements">
-                <div class="design-card">
-                    <div class="container-vignette">
-                        <p class="vignette-badge">vegan</p>
+            <article class="dp-fl flex-b-36 flex-g flex-s p-rem-x051">
+                <!--Image est badge-->
+                <div class="design-card bd-radius-8">
+                    <div class="dp-fl jt-ctn-flex-end">
+                        <span class="design-card__badge cl-green">vegan</span>
                 <img src="img/scott-eckersley-n_q3Dyzv9jQ-unsplash.jpg" alt="">
-                </div>   
+                </div>  
+
+                <!--Texte card-->
                <ul>
                 <h2>Fondu savoyarde</h2>
                 <li><a href="#">difficulté</a><i class="fa fa-star">
@@ -286,37 +338,41 @@
         </div>
     </main>
 <!--Image fond-->
-<div id="background-img">
+<div id="background-img-post-footer" class="m-bottom--1 min-h">
 </div>
 
-<footer class="padding-bottomX2vH" id="background-color-Footer">
-<section class="container-Footer margin-bottomX4vH">
-
-    <ul class="list">
+<!--Footer-->
+<footer class="p-bottom-1vh p-x25" id="cl-brown">
+<section class="Footer-section m-bottom-7vH viewport-size jt-ctn--space-evenly fl-flow-r-w dp-fl">
+    <!--Links-->
+    <ul class="Footer-section__list m-bottom-x10">
     <li><a href="#">Accueil</a></li>
     <li><a href="#">Recettes</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="Form.html">Contact</a></li>
     <li><a href="#">Politique de confidentialité</a></li>
     </ul>
-    <div class="list-icon">
+    <!--Social icons-->
+    <div class="Footer-section__list-icon">
         <h3>Suivez-nous</h3>
-        <div class="container-Links">
-        <li><i class="fa-brands fa-square-facebook"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-square-twitter"></i></li>
+        <div class="cl-white dp-fl">
+        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+        </div>
     </div>
-</div>
+     <!--Form Subscribe-->
     <div>
         <h3>Abonnez-vous à notre Newsletter</h3>
-        <form class="container-form" action="Email" method="<tr></tr>">
+        <form class="cl-grey-g dp-fl fl-d-column" action="Email" method="form">
             <label for="Email">Email</label>
             <input type="email" name="Email" id="Email" placeholder="Entrez votre E-mail">
-            <span class="margin-TopX2vH"><input type="checkbox" name="case de vérification">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            <span class="m-top-1vh"><input type="checkbox" name="case de vérification">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </form>
         </div>
 </section>
-
-<div class="mentions-container">
-    <a id="color-grey" href="#">@ 2022 MODE 83</a>
+<!--Mention légale-->
+<div class="txt-al-center">
+    <a id="cl-grey" href="#">@ 2022 MODE 83</a>
 </div>
 </footer>
 </body>
